@@ -5,11 +5,13 @@ import java.util.Scanner;
 public class LoanCalculator {
 
     /**
-     * TODO: finish out this JavaDoc comment block.
-     * FIXME: WHAT DOES THIS METHOD DO?
+     * Returns the remaining amount on a loan after 3 months when 10% of the loan is paid off each month.
+     *
+     * <p>Note that the loan is interest free and the
+     * parameter given to the getRemainingAmountIn3Months method must be an int</p>
      * 
-     * @param ???
-     * @return ???
+     * @param amount the starting amount of the loan passed in as an int
+     * @return the new loan amount after 10% has been paid off each month.
      */
     static int getRemainingAmountIn3Months(int amount) {
         // TODO: Rewrite this method
@@ -17,7 +19,7 @@ public class LoanCalculator {
         for(int i = 0;i<3;i++){
             amount -= (amount*0.1);
         }
-        System.out.println(amount);
+
         return amount;
     }
 
